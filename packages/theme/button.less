@@ -1,9 +1,12 @@
 @import "./common.less";
 
 .bx-button {
-    width: 100%;
-    height: 30px;
-    border: 1px solid;
+    display: inline-block;
+    font-size: 14px;
+    border: 1px solid @borderColor;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: @fontColor;
 }
 
 .bx-button--primary {
@@ -11,21 +14,31 @@
     background: @primaryColor;
     color: #fff;
 }
-
-.bx-button--default {
-    border-color: @primaryColor;
-    background: @primaryColor;
+.bx-button--success {
+    border-color: @successColor;
+    background: @successColor;
+    color: #fff;
+}
+.bx-button--error {
+    border-color: @errorColor;
+    background: @errorColor;
+    color: #fff;
+}
+.bx-button--warning {
+    border-color: @warningColor;
+    background: @warningColor;
     color: #fff;
 }
 
-.bx-button--s {
-    border-color: @primaryColor;
-    background: @primaryColor;
-    color: #fff;
+.bx-button--small {
+    font-size: 12px;
+    padding: 8px 20px;
 }
 
-.bx-button--primary {
-    border-color: @primaryColor;
-    background: @primaryColor;
-    color: #fff;
+.bx-button--medium {
+    padding: 10px 20px;
+}
+
+.bx-button--large {
+    padding: 12px 20px;
 }
