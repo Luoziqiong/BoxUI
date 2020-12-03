@@ -1,6 +1,6 @@
 const path = require('path');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
-const VueLoaderPlugin = require('vue-loader')
+const VueLoaderPlugin = require('vue-loader/dist/plugin')
 
 const config = require('./config')
 
@@ -17,7 +17,7 @@ module.exports = {
     publicPath: '/dist/',
     filename: 'box-ui.common.js',
     chunkFileName: '[id].js',
-    libraryExport: 'default', 
+    libraryExport: 'default',
     library: 'BOX',  // 导出库(exported library)的名称
     libraryTarget: 'commonjs2'  // 导出库(exported library)的类型
   },
@@ -25,7 +25,7 @@ module.exports = {
   modules: {
     rules: [
       {
-        test: /jsx|babel|es6)$/,
+        test: /\.(jsx|babel|es6)$/,
         include: process.cwd(),
         exclude: config.jsexclude,
         loader: 'babel-loader'

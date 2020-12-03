@@ -1,0 +1,47 @@
+@import "../theme/common.less";
+
+@box-button-prefix-cls: ~"@{box-prefix}-button";
+
+.@{box-button-prefix-cls} {
+  display: inline-block;
+  font-size: 14px;
+  border: 1px solid @borderColor;
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: @fontColor;
+  background: @white;
+
+  &--primary {
+    border-color: @primaryColor;
+    background: @primaryColor;
+    color: @white;
+  }
+  &--success {
+    border-color: @successColor;
+    background: @successColor;
+    color: @white;
+  }
+  &--error {
+    border-color: @errorColor;
+    background: @errorColor;
+    color: @white;
+  }
+  &--warning {
+    border-color: @warningColor;
+    background: @warningColor;
+    color: @white;
+  }
+
+  &--small {
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+
+  &--medium {
+    padding: 10px 20px;
+  }
+
+  &--large {
+    padding: 12px 20px;
+  }
+}

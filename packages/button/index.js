@@ -1,8 +1,8 @@
-  
-import BxButton from './src/button';
+
+import BxButton from './button';
 
 /* istanbul ignore next */
-BxButton.install = function(Vue) {
+BxButton.install = function (Vue) {
   Vue.component(BxButton.name, BxButton);
 };
 
