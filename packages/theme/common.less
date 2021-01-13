@@ -1,17 +1,38 @@
+@import "./color/colors.less";
+
 @box-prefix: bx;
-@white: #ffffff;
-@black: #000000;
 
-// themeColor
-@primaryColor: #00a6ed;
-@successColor: #7fb800;
-@errorColor: #f6511d;
-@warningColor: #fcd21d;
+// Color
+@primaryColor: @blue-6;
+@successColor: @green-6;
+@errorColor: @red-6;
+@warningColor: @gold-6;
 
-//fontColor
-@fontColor: #010202;
-@borderColor: #b9baba;
+@font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+@fontColor: @gray-7;
+@borderColor: @gray-2;
 
 // fontSize
 @BoldFontSize: 40px;
 @TitleFontSize: 24px;
+
+// vertical paddings
+@padding-lg: 24px; // containers
+@padding-md: 16px; // small containers and buttons
+@padding-sm: 12px; // Form controls and items
+@padding-xs: 8px; // small items
+@padding-xss: 4px; // more small
+
+// vertical padding for all form controls
+@control-padding-horizontal: @padding-sm;
+@control-padding-horizontal-sm: @padding-xs;
+
+// vertical margins
+@margin-lg: 24px; // containers
+@margin-md: 16px; // small containers and buttons
+@margin-sm: 12px; // Form controls and items
+@margin-xs: 8px; // small items
+@margin-xss: 4px; // more small

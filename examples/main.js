@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router/index'
+import '../packages/theme/index.less'
 import BxButton from '../packages/button'
 Vue.config.productionTip = false
 
